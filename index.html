@@ -5,11 +5,13 @@
 </head>
 <body>
 
-    <div onclick="startButton(event);"><img alt="Start" id="start_img" src="https://speechlogger.appspot.com/images/micoff2.png">Click Mic to Start</div>
+    <div onclick="startButton(event);"><img alt="Start" id="start_img" src="https://speechlogger.appspot.com/images/micoff2.png">Click Mic to Start then tell giphy what you want to see. Wait for results below.</div>
     <div><img alt="result should show up here" id="result_img" src=""></div>
     
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 <script type="text/javascript">
+    
+    //copy pasta from https://speechlogger.appspot.com/developers/ & https://github.com/Giphy/GiphyAPI#translate-endpoint & 
     
 if (!('webkitSpeechRecognition' in window)) {
     alert('Speech API not supported here…');
